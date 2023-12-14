@@ -12,16 +12,10 @@ module.exports = {
     },
   },
   networks: {
-    zksync_testnet: {
-      url: "https://zksync2-testnet.zksync.dev",
-      ethNetwork: "goerli",
-      chainId: 280,
-      zksync: true,
-    },
-    zksync_mainnet: {
-      url: "https://zksync2-mainnet.zksync.io/",
-      ethNetwork: "mainnet",
-      chainId: 324,
+    mumbai: {
+      url: "https://rpc-mumbai.zksync.io/",
+      ethNetwork: "mumbai",
+      chainId: 80001,
       zksync: true,
     },
   },
@@ -32,7 +26,7 @@ module.exports = {
     tests: "./test",
   },
   solidity: {
-    version: "0.8.17",
+    version: "0.8.22",
     settings: {
       optimizer: {
         enabled: true,
